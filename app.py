@@ -60,7 +60,7 @@ with tab1:
             img = img.convert("L")              # grayscale
             img = img.resize((28, 28))
             img = np.array(img) / 255.0
-            img = img.reshape(1, 28, 28, 1).astype(np.float32)
+            img = img.reshape(1, 28, 28).astype(np.float32)
 
             result = session.run(None, {input_name: img})
             digit = np.argmax(result[0])
@@ -79,7 +79,7 @@ with tab2:
         img = Image.open(uploaded_file).convert("L")
         img = img.resize((28, 28))
         img = np.array(img) / 255.0
-        img = img.reshape(1, 28, 28, 1).astype(np.float32)
+        img = img.reshape(1, 28, 28).astype(np.float32)
 
         result = session.run(None, {input_name: img})
         digit = np.argmax(result[0])
