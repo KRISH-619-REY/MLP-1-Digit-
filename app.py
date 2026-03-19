@@ -89,10 +89,3 @@ with tab2:
         st.success(f"### Predicted Digit: {digit}")
         st.write(f"Confidence: {confidence:.2%}")
 
-'''### Update `requirements.txt` to:
-```
-onnxruntime
-streamlit
-numpy
-Pillow
-streamlit-drawable-canvas'''
