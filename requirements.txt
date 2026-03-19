@@ -1,8 +1,5 @@
-onnx>=1.14.0
-keras2onnx>=1.7.0
-onnxruntime
 streamlit
 numpy
 Pillow
+onnxruntime
 streamlit-drawable-canvas
-tensorflow
